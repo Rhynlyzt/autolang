@@ -9,7 +9,7 @@ module.exports.config = {
   aliases: ['ngl', 'spam'],
   description: "NGL Spammer Command",
   usage: "nglspamm [username] [message] [amount]",
-  credits: 'churchill',
+  credits: 'tete',
   cooldown: 3,
 };
 
@@ -19,7 +19,7 @@ module.exports.run = async function({ api, event, args }) {
   const message = args.slice(1, args.length - 1).join(' ');
 
   if (!username || !message || isNaN(amount) || amount <= 0) {
-    api.sendMessage('nglspamm username message amount', event.threadID, event.messageID);
+    api.sendMessage('nglspamm <username> <message> <amount>', event.threadID, event.messageID);
     return;
   }
 

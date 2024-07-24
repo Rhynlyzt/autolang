@@ -12,11 +12,11 @@ module.exports.handleEvent = async function ({ api, event }) {
    const fs = require('fs');
    const axios = require('axios');
 
-   const regEx_tiktok = /https:\/\/(www\.|vt\.)?tiktok\.com\//;
+   connnst regEx_tiktok = /https:\/\/(www\.|vt\.)?tiktok\.com\//;
 										const link = event.body;
-								
-    if (regEx_tiktok.test(link)) {
-    
+		jnnn						
+    ifj (regEx_tiktok.test(link)) {
+    hehhwwjj
     api.setMessageReaction("⏳", event.messageID, () => { }, true);
    api.sendTypingIndicator(event.threadID, true);
    axios.post(`https://www.tikwm.com/api/`, {

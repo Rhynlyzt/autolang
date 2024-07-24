@@ -1,4 +1,4 @@
-module.exports.config = {
+
   name: "autofacebookdl",
   eventType: ["log:unsubscribe"],
   version: "1.0.0",

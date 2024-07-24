@@ -37,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
             const generatedText = response.data.response;
 
             // Ai Answer Here
-            api.sendMessage(`𝗚𝗣𝗧 3.5 𝗧𝗨𝗥𝗕𝗢 𝗠𝗢𝗗. \n━━━━━━━━━━━━━━━━━━\n${generatedText}\n━━━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+            api.sendMessage(`𝗚𝗣𝗧4 𝗔𝗦𝗦𝗜𝗦𝗧𝗔𝗡𝗧\n━━━━━━━━━━━━━━━━━━\n${generatedText}\n━━━━━━━━━━━━━━━━━━`, event.threadID, messageID);
         } else {
             console.error('API response did not contain expected data:', response.data);
             api.sendMessage(`❌ An error occurred while generating the text response. Please try again later. Response data: ${JSON.stringify(response.data)}`, event.threadID, messageID);

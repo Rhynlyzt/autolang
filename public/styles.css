@@ -71,16 +71,16 @@ body {
 
 .container {
            color: blue;
-           background: #00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00;
+           background:;
                  border-radius: 10px;
                  padding: 20px;
-           box-shadow: 0 0 .2rem #fff,0 0 .2rem #fff, 0 0 2rem #1F51FF,
+           box-shadow: 0 0 .2rem #fff,0 0 .2rem blue;, 0 0 2rem blue;,
             0 0 0.8rem #1F51FF,
-            0 0 2.8rem #1F51FF,
-            inset 0 0 1.3rem #1F51FF;
+            0 0 2.8rem blue;,
+            inset 0 0 1.3rem blue;
                  margin-top: 20px;
                  margin-bottom: 20px;
-         outline: 2px solid #blue;
+         outline: 2px solid blue;
 }
  h1 {
                  color: blue;
@@ -88,46 +88,46 @@ body {
                  margin-bottom: 15px;
 }
  label {
-                 background-color: #00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00;
-           color: #343434;
+                 background-color:;
+           color: deepskyblue;
                  border-radius: 10px;
                  font-weight: bold;
                  margin-bottom: 5px;
-           background-image: #00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00;
+           background-image:;
 }
  .centered-textarea {
-                 color: #00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00;
+                 color: ;
                  display: flex;
                  margin: 0 auto;
                  width: 100%;
                  min-height: 150px;
                  padding: 10px;
                  box-sizing: border-box;
-                 border: 1px solid #blue;
+                 border: 1px limee;
                  border-radius: 5px;
                  resize: none;
 }
  .btn-primary {
-                 background-color: blue;
-                 border: 1px solid #007bff;
-           color: #261a1a;
+                 background-color: steelblue;
+                 border: 1px solid: #a4fc81;
+                 background-border color: #00;
 }
  .btn-primary:hover {
-                 background-color: #76d674;
-                 border: 1px solid #0056b3;
+                 background-color: skyblue;
+                 border: 1px solid #a4fc81;
 }
  .success-message {
-                 color: blue;
+                 color: seagreen;
                  margin-top: 10px;
 }
  .footer {
-                 background-color: #E90207 46%,  #ff8c00 100%;
-                 padding: 10px;
+                 background-color:black; 46%,  #ff8c00 100%;
+                 padding: 15px;
                  text-align: center;
-                 font-size: 16px;
-                 color: #00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00;
+                 font-size: 20px;
+                 color:;
                  margin-top: 50px;
-                 border-top: 1px solid blue;
+                 border-top: 1px solid green;
                  position: fixed;
                  bottom: 0;
                  left: 0;
@@ -160,17 +160,17 @@ body {
         margin-top: 10px;
         padding: 14px;
         align-items: center;
-        border: 1px solid #87afff;
+        border: 1px solid #a4fc81;
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease, border-color 0.3s ease; 
-        border-color: #87afff;
-        background-color: #87afff;
+        border-color: #a4fc81;
+        background-color: steelblue;
 }
 
 .form-check:hover {
-        background-color: #87afff; 
-        border-color: #87afff; 
+        background-color: skyblue; 
+        border-color: #a4fc81; 
 }
 
 .form-check-input {
@@ -182,43 +182,180 @@ body {
         display: none;
 }
 
-#inputOfPrefix, #inputOfAdmin { 
+ #inputOfPrefix, #inputOfAdmin { 
         padding: 13px;
         width: 200px;
-        border: 1px solid blue;
+        border: 1px blue;
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease, border-color 0.3s ease; 
-        border-color: #87afff;
-        background-color: #87afff;
+        border-color: #a4fc81;
+        background-color: steelblue;
 
 }
 
 #json-data {
-    background-image: url('https://media4.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif?cid=6c09b952uys1wv9s8v4hnc7dbo339rgcjiunfvyovq9u6m5n&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+    background-image: url('https://i.ibb.co/0CBtw1C/25934f82c4e78f171ca27995f3ec9c17.gif');
 
     background-size: cover;
     background-repeat: no-repeat;
-    border-color: #87afff;
+    border-color: blue;
 }
 
 }
 , #listOfCommands, #listOfCommandsEvent, #prefixOfCommands,          #adminOfCommands {
-  border: none !important;
+  border: none !important!
 
 }
 
 div {
         margin-bottom: 10px;
         border-radius: 5px;
+
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://media4.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif?cid=6c09b952uys1wv9s8v4hnc7dbo339rgcjiunfvyovq9u6m5n&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g'); 
+    background-image: url('https://media1.giphy.com/media/pfEOdgxXBFuf3EqQeq/giphy.gif?cid=6c09b952t99v0nkqe3og95toef37tzgventfkqmisahb2p5q&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color #00ff00:
     color: #333;
     padding: 24px;
-  }
+
+      }
+    .rainbow-text {
+            background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* CSS Animation để tạo hiệu ứng chữ màu động */
+        @keyframes rainbow {
+            0% {
+                color: violet;
+            }
+            14% {
+                color: indigo;
+            }
+            28% {
+                color: blue;
+            }
+            42% {
+                color: green;
+            }
+            50% {
+                color: pink;
+            }
+            56% {
+                color: yellow;
+            }
+            60% {
+                color: lime;
+            }
+            70% {
+                color: orange;
+            }
+            84% {
+                color: red;
+            }
+            100% {
+                color: violet;
+            }
+        }
+
+        /* Áp dụng Animation cho chữ */
+        .animated-rainbow {
+            animation: rainbow 4s linear infinite;
+        }
+        .footer {
+      text-align: center;
+      background-color;
+      color: deepskyblue;
+      padding: 1px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 11px;
+        }
+          .container {
+          text-align: center;
+          z-index: 1;
+          border-radius: 10px;
+          padding: 18px;
+          border: var(--onyx);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          margin-top: 30px;
+          width: 100%;
+          background-color:;
+          }
+    .container {
+            background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* CSS Animation để tạo hiệu ứng chữ màu động */
+        @keyframes rainbow {
+            0% {
+                color: violet;
+            }
+            14% {
+                color: indigo;
+            }
+            28% {
+                color: blue;
+            }
+            42% {
+                color: green;
+            }
+            50% {
+                color: pink;
+            }
+            56% {
+                color: yellow;
+            }
+            60% {
+                color: lime;
+            }
+            70% {
+                color: orange;
+            }
+            84% {
+                color: red;
+            }
+            100% {
+                color: violet;
+            }
+        }
+
+        /* Áp dụng Animation cho chữ */
+        .container {
+            animation: rainbow 4s linear infinite;
+        }
+        .footer {
+      text-align: center;
+      background-color;
+      color: deepskyblue;
+      padding: 1px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 11px;
+        }
+          .container {
+          text-align: center;
+          z-index: 1;
+          border-radius: 10px;
+          padding: 18px;
+          border: var(--onyx);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          margin-top: 30px;
+          width: 100%;
+          background-color:;
+          }

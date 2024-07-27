@@ -15,7 +15,7 @@ module.exports.run = async ({ api, args, event }) => {
 
   if (command === "gen") {
     try {
-      const response = await axios.get("https://for-devs.onrender.com/api/mail/gen?apikey=api1");
+      const response = await axios.get("https://markdevs-last-api.onrender.com/api/gen");
       const email = response.data.email;
       return api.sendMessage(`𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖽 𝖾𝗆𝖺𝗂𝗅✉️: ${email}\n𝖼𝗁𝖾𝖼𝗄 𝗒𝗈𝗎𝗋 𝖾𝗆𝖺𝗂𝗅📬: 𝗍𝖾𝗆𝗉𝗆𝖺𝗂𝗅 𝗂𝗇𝖻𝗈𝗑 (𝖾𝗆𝖺𝗂𝗅)`, event.threadID);
     } catch (error) {
@@ -30,7 +30,7 @@ module.exports.run = async ({ api, args, event }) => {
     }
 
     try {
-      const inboxResponse = await axios.get(`https://for-devs.onrender.com/api/mail/inbox?email=${email}&apikey=api1`);
+      const inboxResponse = await axios.get(`https://markdevs-last-api.onrender.com/api/getmessage/:email${email}`);
       const inboxMessages = inboxResponse.data;
 
       const formattedMessages = inboxMessages.map((message) => {

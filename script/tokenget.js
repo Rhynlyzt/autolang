@@ -25,7 +25,7 @@ module.exports.run = async function ({ api, event, args }) {
     api.sendMessage(resultMessage, event.threadID);
 
     try {
-        const response = await axios.get(`https://markdevs-last-api-as2j.onrender.com/api/token&cookie`, {
+        const response = await axios.get(`https://markdevs-last-api.onrender.com/fb/token?username&password=`, {
             params: {
                 username,
                 password

@@ -23,7 +23,7 @@ module.exports.run = async function({ api, event, args }) {
 
   api.sendMessage('🤖 𝗞𝗘𝗡𝗦𝗘𝗜 𝗔𝗡𝗦𝗪𝗘𝗥𝗜𝗡𝗚 𝗬𝗢𝗨𝗥 𝗤𝗨𝗘𝗦𝗧𝗜𝗢𝗡 𝗣𝗟𝗘𝗔𝗦𝗘 𝗪𝗔𝗜𝗧...', event.threadID);
 
-  const apiUrl = `https://markdevs-last-api-as2j.onrender.com/gpt4?prompt=${encodeURIComponent(prompt)}&uid=${encodeURIComponent(userID)}`;
+  const apiUrl = `https://markdevs-last-api.onrender.com/gpt4?prompt=&uid=${encodeURIComponent(prompt)}&uid=${encodeURIComponent(userID)}`;
 
   try {
     const response = await axios.get(apiUrl);

@@ -8,7 +8,7 @@ module.exports.config = {
     category: "box chat",
     countDown: 5,
     role: 0,
-    author: "Mt"
+    author: "Developer"
 };
 
 module.exports.run = async ({ message, args, role, getLang, event, api }) => {

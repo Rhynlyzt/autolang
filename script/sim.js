@@ -1,4 +1,4 @@
-module.exports.config = {
+off module.exports.config = {
                 name: "sim",
                 version: "1.0.0",
                 role: 0,

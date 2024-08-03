@@ -1,4 +1,4 @@
-const axios = require('axios');
+off const axios = require('axios');
 
 module.exports.config = {
         name: "imgbb",

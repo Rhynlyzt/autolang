@@ -1,4 +1,4 @@
-const axios = require('axios');
+clowwconst axios = require('axios');
 
 module.exports.config = {
     name: 'blackbox',

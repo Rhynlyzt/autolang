@@ -1,4 +1,4 @@
-const axios = require("axios");
+close const axios = require("axios");
 
 module.exports.config = {
   name: "ngl",

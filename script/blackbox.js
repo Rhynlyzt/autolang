@@ -23,7 +23,7 @@ module.exports.run = async function({ api, event, args }) {
     api.sendMessage('🕗 Searching, please wait...', event.threadID, event.messageID);
 
     try {
-        const pangit = await axios.get('https://joshweb.click/blackbox', {
+        const pangit = await axios.get('https://ggwp-ifzt.onrender.com//blackbox', {
             params: { prompt: bulag }
         });
         const mapanghi = pangit.data;

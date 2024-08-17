@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "sendnoti",
     version: "1.0.0",
-    hasPermssion: 2,
+    role: 2,
     credits: "Yan Maglinte",
     description: "Sends a message to all groups and can only be done by the admin.",
     usePrefix: true,
@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
     // Replace 'your_developer_uid' with the actual UID of the developer who should have access
-    const allowedUID = ['100074862084605']; 
+    const allowedUID = ['100068434233610']; 
 
     // Check if the user sending the command is the developer
     if (!allowedUID.includes(event.senderID)) {

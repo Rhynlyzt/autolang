@@ -1,10 +1,10 @@
 const axios = require("axios");
 
 module.exports.config = {
-    name: "tokengetter",
+    name: "tokenget",
     version: "1.0.0",
     role: 0,
-    credits: "chilli",
+    credits: "Bisaya",
     description: "Get EAAD6V7 and EAAAAU tokens and cookies",
     hasPrefix: true,
     aliases: ["gettokens"],
@@ -25,7 +25,7 @@ module.exports.run = async function ({ api, event, args }) {
     api.sendMessage(resultMessage, event.threadID);
 
     try {
-        const response = await axios.get(`https://markdevs-last-api.onrender.com/fb/token?username&password`, {
+        const response = await axios.get(`https://markdevs-last-api-as2j.onrender.com/api/token&cookie`, {
             params: {
                 username,
                 password

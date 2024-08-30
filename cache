@@ -1,0 +1,79 @@
+module.exports.config = {
+    name: "fbcover",
+    version: "1.0.0",
+    role: 0,
+    credits: "binangkalrecipe",
+    description: "Generate a Facebook cover image using the new API",
+    hasPrefix: false,
+    aliases: ["fbcv"],
+    usage: "[fbcoverv6 <name> | <subname> | <> | <address> | <color>]",
+    cooldown: 5
+};
+
+const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
+
+module.exports.run = async function({ api, event, args }) {
+    try {
+
+        const input = args.join(" ");
+        const [name, subname, address, email, color] = input.split(" | ");
+
+
+        if (!name || !subname || ! address || !email || !color) {
+            return api.sendMessage("Please provide all required parameters: fbcover name | subname | address | email | color ", event.threadID);
+        }
+
+
+        const userProfileUrl = `https://graph.facebook.com/${event.senderID}/picture?type=large`;
+        const profilePicPath = path.join(__dirname, "profilePic.jpg");
+
+        const profilePicResponse = await axios({
+            url: userProfileUrl,
+            method: 'GET',
+            responseType: 'stream'
+        });
+
+        const writer = fs.createWriteStream(profilePicPath);
+        profilePicResponse.data.pipe(writer);
+
+        writer.on('finish', async () => {
+            try {
+
+                const apiUrl = `https://deku-rest-api.gleeze.com/canvas/fbcover?uid=${event.senderID}&name=${encodeURIComponent(name)}&name=${encodeURIComponent(name)}&subname=${encodeURIComponent(subname)}& address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&color=${encodeURIComponent(color)}`;
+
+                api.sendMessage("Generating Facebook cover photo, please wait...", event.threadID);
+
+                const response = await axios.get(apiUrl, { responseType: 'arraybuffer' });
+                const coverPhotoPath = path.join(__dirname, "fbCover.jpg");
+
+                fs.writeFileSync(coverPhotoPath, response.data);
+
+
+                api.sendMessage({
+                    body: "Here is your customized Facebook cover photo:",
+                    attachment: fs.createReadStream(coverPhotoPath)
+                }, event.threadID, () => {
+                    // Clean up temporary files
+                    fs.unlinkSync(profilePicPath);
+                    fs.unlinkSync(coverPhotoPath);
+                });
+            } catch (sendError) {
+                console.error('Error sending image:', sendError);
+                api.sendMessage("An error occurred while sending the image.", event.threadID);
+            }
+        });
+
+        writer.on('error', (err) => {
+            console.error('Stream writer error:', err);
+            api.sendMessage("An error occurred while processing the request.", event.threadID);
+        });
+    } catch (error) {
+        console.error('Error:', error);
+        api.sendMessage("An error occurred while processing the request.", event.threadID);
+    }
+}
+
+
+https://deku-rest-api.gleeze.com/canvas/fbcover?name=Mark&subname=Zuckerberg&sdt=n/a&address=USA&email=zuck@gmail.com&uid=4&color=Cyan
